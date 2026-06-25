@@ -12,38 +12,40 @@
     <link rel="stylesheet" href="../output.css" />
   </head>
   <body
-    class="bg-pink-200 flex justify-center items-center text-center min-h-screen"
+    class="bg-pink-400 flex justify-center items-center text-center min-h-screen"
   >
     <div
-      class="bg-sky-500 p-6 w-96 rounded-lg"
-      style="width: 600px; height: 250px; padding: 4px"
+      class="bg-sky-500 p-6 w-96 m-4 rounded-full border-6 border-blue-950"
+      style="width: 450px; height: 300px; padding: 4px"
     >
-      <h1
-        style="
-          padding-bottom: 12px;
-          padding: 20px 30px 30px 30px;
-          font-weight: bold;
-          font-size: xxx-large;
-          color: brown;
-        "
-      >
-        login
-      </h1>
+      <h1 class="text-6xl text-red-500 pb-9 pt-9">login</h1>
       <form class="flex flex-col gap-4">
         <div class="flex gap-2 items-center justify-center">
-          <label style="font-size: x-large" for="email">email:</label>
+          <label class="text-2xl" for="email">email:</label>
           <input
-            style="border: 2px solid #8b3232"
+            class="focus:ring-blue-500 border-3 border-pink-800 rounded-lg w-48 hover:bg-white"
             type="email"
+            placeholder="Enter the email"
             name="email"
             id=""
           />
         </div>
         <div class="flex gap-2 items-center justify-center">
-          <label for="password">password:</label>
-          <input type="password" name="password" id="" />
+          <label class="text-2xl" for="password">password:</label>
+          <input
+            class="focus:ring-blue-500 border-3 border-pink-800 rounded-lg w-48 hover:bg-white"
+            type="password"
+            name=""
+            id=""
+            placeholder="password"
+          />
         </div>
-        <button type="submit">login</button>
+        <button
+          class="border-2 border-green-500 bg-white text-black w-50 rounded-lg py-2 self-center hover:bg-gray-500 text-xl transition duration-500"
+          type="submit"
+        >
+          Login
+        </button>
       </form>
     </div>
   </body>
